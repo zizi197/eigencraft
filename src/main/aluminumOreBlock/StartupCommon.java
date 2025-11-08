@@ -31,7 +31,7 @@ public class StartupCommon
   @SubscribeEvent
   public static void onItemsRegistration(final RegistryEvent.Register<Item> itemRegisterEvent) {
     // We need to create a BlockItem so the player can carry this block in their hand and it can appear in the inventory
-    final int MAXIMUM_STACK_SIZE = 20;  // player can only hold 20 of this block in their hand at once
+    final int MAXIMUM_STACK_SIZE = 64;  // player can only hold 64 of this block in their hand at once
 
     Item.Properties itemSimpleProperties = new Item.Properties()
                                                    .maxStackSize(MAXIMUM_STACK_SIZE)
